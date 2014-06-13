@@ -1,0 +1,1 @@
+﻿robocopy '.\keepass' "$env:APPDATA\KeePass" /W:1 /R:3
