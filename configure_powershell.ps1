@@ -13,6 +13,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 
 
 #install POSH GIT
+Push-Location
 if(![System.IO.Directory]::Exists("C:\github\dahlbyk\posh-git"))
 {
 	git clone https://github.com/dahlbyk/posh-git.git C:\github\dahlbyk\posh-git
@@ -25,6 +26,7 @@ else
 }
 
 .\install.ps1
+Pop-Location
 
 #remove that 'Could not find ssh-agent' warning when starting powershell
 $profilescript = [System.IO.File]::ReadAllText("C:\github\dahlbyk\posh-git\profile.example.ps1")
