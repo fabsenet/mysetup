@@ -5,7 +5,7 @@
 		<OmitItemsWithDefaultValues>true</OmitItemsWithDefaultValues>
 	</Meta>
 	<Application>
-		<LastUpdateCheck>2014-05-26T17:12:03Z</LastUpdateCheck>
+		<LastUpdateCheck>2014-06-13T19:42:07Z</LastUpdateCheck>
 		<LastUsedFile>
 			<Path>..\..\Users\Fabian\CloudStation\Passwords_KF.kdbx</Path>
 			<CredProtMode>Obf</CredProtMode>
@@ -160,7 +160,7 @@
 		</KeySources>
 	</Defaults>
 	<Integration>
-		<HotKeyGlobalAutoType>166</HotKeyGlobalAutoType>
+		<HotKeyGlobalAutoType>196673</HotKeyGlobalAutoType>
 		<HotKeySelectedAutoType>0</HotKeySelectedAutoType>
 		<HotKeyShowWindow>393291</HotKeyShowWindow>
 		<HotKeyEntryMenu>0</HotKeyEntryMenu>
