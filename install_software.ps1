@@ -25,3 +25,7 @@ cinst 7zip
 cinst SublimeText3.app
 cinst vlc
 cinst notepadplusplus
+cinst paint.net
+cinst GoogleChrome-AllUsers
+cinst firefox
+cinst keepass
