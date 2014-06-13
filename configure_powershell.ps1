@@ -1,4 +1,6 @@
-﻿#we need elevation for this script
+﻿Set-PSDebug -Strict
+
+#we need elevation for this script
 If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator))
 {   
     $arguments = "& '" + $myinvocation.mycommand.definition + "'"
