@@ -25,4 +25,9 @@ Automated Steps
  	* PowerShell (including startup path)
  	* Windows Command window size and font
  	* Sublime (settings + plugins)
+		* [sublimetext_indentxml](https://github.com/alek-sys/sublimetext_indentxml) plugin
+			* format: `strg+k,strg+f`
+		* [hasher](https://github.com/dangelov/hasher) plugin
+			* entity encode: `strg+e,strg+e`
+			* entity decode: `strg+e,strg+d`
  	* KeePass (basically _every_ checkbox differs from the default)
