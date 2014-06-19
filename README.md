@@ -7,7 +7,7 @@ This will be my one-stop-solution to configure a fresh machine the way I like it
 Automated Steps
 ===============
 
- 1. Install Chocolatey (install_software.ps1)
+ 1. Install Chocolatey (`install_software.ps1`)
  2. Commom Software will be installed using Chocolatey (`install_software.ps1`)
 	* git
 	* posh-git (A PowerShell environment for Git)
