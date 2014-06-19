@@ -1,3 +1,23 @@
 [
-	 { "keys": ["ctrl+shift+x"], "command": "tidy_xml_lint" }, { "keys": ["ctrl+shift+j"], "command": "prettify_json" } 
+    {
+        "command": "auto_indent",
+        "keys": [
+            "ctrl+k",
+            "ctrl+f"
+        ]
+    },
+    {
+    	"command": "entity_encode",
+        "keys": [
+            "ctrl+e",
+            "ctrl+e"
+        ]
+    },
+    {
+    	"command": "entity_decode",
+        "keys": [
+            "ctrl+e",
+            "ctrl+d"
+        ]
+    }
 ]
