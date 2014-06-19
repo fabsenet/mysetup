@@ -1,4 +1,4 @@
-﻿robocopy '.\Sublime3' "$env:APPDATA\Sublime Text 3" /W:1 /R:3
+﻿robocopy '.\Sublime3' "$env:APPDATA\Sublime Text 3" /E /W:1 /R:3
 
 
 
@@ -15,7 +15,8 @@ else
 	cd alek-sys\sublimetext_indentxml
 	git pull
 }
-robocopy '.\' "$env:APPDATA\Sublime Text 3\Packages\sublimetext_indentxml" /W:1 /R:3
+robocopy '.\' "$env:APPDATA\Sublime Text 3\Packages\sublimetext_indentxml" /E /W:1 /R:3
+Pop-Location
 
 
 #install hasher
@@ -31,5 +32,5 @@ else
 	cd dangelov\hasher
 	git pull
 }
-robocopy '.\' "$env:APPDATA\Sublime Text 3\Packages\hasher" /W:1 /R:3
+robocopy '.\' "$env:APPDATA\Sublime Text 3\Packages\hasher" /E /W:1 /R:3
 Pop-Location
