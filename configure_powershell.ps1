@@ -48,11 +48,23 @@ write-host "FIXED: 'Could not find ssh-agent'"
 
 #modify powershell shortcut to start in c:\github
 #based on http://stackoverflow.com/questions/484560/editing-shortcut-lnk-properties-with-powershell
-$poshlnk = "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\System Tools\Windows PowerShell.lnk"
-$shell = New-Object -COM WScript.Shell
-$shortcut = $shell.CreateShortcut($poshlnk)  ## Open the lnk
-$shortcut.WorkingDirectory = "C:\github\"
-$shortcut.Save()  ## Save
+
+function fixPoshLink($poshlink){
+    if(test-path $poshlink){
+        $shell = New-Object -COM WScript.Shell
+        $shortcut = $shell.CreateShortcut($poshlink)  ## Open the lnk
+        $shortcut.WorkingDirectory = "C:\github\"
+        $shortcut.Save()  ## Save
+        Write-Host "Fixed link: $poshlink";
+    }
+    else
+    {
+        Write-Host "link not found: $poshlink";
+    }
+}
+
+fixPoshLink("$env:ProgramData\Microsoft\Windows\Start Menu\Programs\System Tools\Windows PowerShell.lnk");
+fixPoshLink("$env:ProgramData\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell\Windows PowerShell.lnk");
 
 #load console window properties to registry
 regedit /s .\console_window_settings.reg
