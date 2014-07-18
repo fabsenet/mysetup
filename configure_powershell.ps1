@@ -31,6 +31,19 @@ Pop-Location
 #remove that 'Could not find ssh-agent' warning when starting powershell
 $profilescript = [System.IO.File]::ReadAllText("C:\github\dahlbyk\posh-git\profile.example.ps1")
 $profilescript = $profilescript.Replace("Start-SshAgent", "#Start-SshAgent")
+
+$profilescript += @"
+
+function ex(){
+explorer .
+}
+
+function sub($file){
+& 'C:\Program Files\Sublime Text 3\sublime_text.exe' "$file"
+}
+
+"@
+
 [System.IO.File]::WriteAllText("C:\github\dahlbyk\posh-git\myprofile.ps1", $profilescript);
 
 #update all profiles to load myprofile instead of the example profile
