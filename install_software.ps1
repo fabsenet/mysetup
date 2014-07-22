@@ -27,5 +27,4 @@ cinst vlc
 cinst notepadplusplus
 cinst paint.net
 cinst GoogleChrome-AllUsers
-cinst firefox
 cinst keepass
