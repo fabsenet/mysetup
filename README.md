@@ -17,7 +17,6 @@ This will be my one-stop-solution to configure a fresh machine the way I like it
 	* Paint.net
 	* KeePass
 	* Google Chrome
-	* Firefox
 
 ##Configuration##
 My own default settings are applied (`configure_*.ps1`)
