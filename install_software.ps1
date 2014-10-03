@@ -28,3 +28,4 @@ cinst notepadplusplus
 cinst paint.net
 cinst GoogleChrome-AllUsers
 cinst keepass
+cinst psget

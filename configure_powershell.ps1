@@ -81,3 +81,5 @@ fixPoshLink("$env:ProgramData\Microsoft\Windows\Start Menu\Programs\Accessories\
 
 #load console window properties to registry
 regedit /s .\console_window_settings.reg
+
+install-module Jump.Location
