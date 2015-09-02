@@ -2,6 +2,7 @@
 	helper = store
 [core]
 	editor = 'C:\\Program Files (x86)\\Notepad++\\notepad++.exe' -multiInst -nosession -noPlugin -ldiff
+	autocrlf = false
 [user]
 	name = Fabian Wetzel
 	email = fabsenet@googlemail.com
