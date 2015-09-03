@@ -11,3 +11,4 @@
 [alias]
 	logo = log --oneline
 	st = status
+	diffw = diff --ignore-space-change
