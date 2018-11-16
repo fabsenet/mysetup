@@ -1,8 +1,5 @@
-[credential]
-	helper = store
 [core]
 	editor = code --wait
-	autocrlf = false
 [user]
 	name = Fabian Wetzel
 	email = fabsenet@googlemail.com
@@ -11,9 +8,9 @@
 [alias]
 	logo = log --oneline
 	st = status
-	diffw = diff --ignore-space-change
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[credential]
