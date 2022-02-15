@@ -19,9 +19,11 @@ else {
 
 cinst github
 cinst 7zip
-cinst SublimeText3.app
 cinst vlc
 cinst paint.net
 cinst GoogleChrome-AllUsers
 cinst keepass
 cinst psget
+cinst microsoftazurestorageexplorer
+cinst visualstudio-installer
+cinst vscode
