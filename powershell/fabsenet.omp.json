@@ -1,0 +1,96 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "blocks": [
+      {
+        "type": "prompt",
+        "alignment": "right",
+        "vertical_offset": -1,
+        "segments": [
+          {
+            "type": "time",
+            "style": "plain",
+            "foreground": "#aaaaaa",
+            "properties": {
+              "time_format": "15:04:05"
+            }
+          }
+        ]
+      },
+      {
+        "type": "prompt",
+        "alignment": "left",
+        "newline": true,
+        "segments": [
+          {
+            "type": "os",
+            "style": "plain",
+            "foreground": "#ffffff",
+            "background": "transparent",
+            "properties": {
+              "prefix": ""
+            }
+          },
+          {
+            "type": "path",
+            "style": "powerline",
+            "powerline_symbol": "\uE0B0",
+            "foreground": "#100e23",
+            "background": "#91ddff",
+            "properties": {
+              "home_icon": "\uF7DB",
+              "folder_icon": "\uF115",
+              "folder_separator_icon": " \uE0B1 ",
+              "style": "agnoster",
+              "enable_hyperlink": true
+            }
+          },
+          {
+            "type": "git",
+            "style": "powerline",
+            "powerline_symbol": "\uE0B0",
+            "foreground": "#193549",
+            "background": "#95ffa4",
+            "background_templates": [
+              "{{ if or (.Working.Changed) (.Staging.Changed) }}#c4a000{{ end }}",
+              "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#f26d50{{ end }}",
+              "{{ if gt .Ahead 0 }}#89d1dc{{ end }}",
+              "{{ if gt .Behind 0 }}#4e9a06{{ end }}"
+            ],
+            "properties": {
+              "branch_icon": "\uF126 ",
+              "fetch_stash_count": true,
+              "fetch_status": true,
+              "fetch_upstream_icon": true,
+              "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uF044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uF046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \uF692 {{ .StashCount }}{{ end }}"
+            }
+          },
+          {
+            "type": "executiontime",
+            "style": "diamond",
+            "leading_diamond": "<transparent,#49404f>\uE0B0</>",
+            "trailing_diamond": "\uE0B0",
+            "foreground": "#ffffff",
+            "background": "#49404f",
+            "properties": {
+              "threshold": 0,
+              "style": "round"
+            }
+          },
+          {
+            "type": "exit",
+            "style": "powerline",
+            "powerline_symbol": "\uE0B0",
+            "foreground": "#ffffff",
+            "background": "#491515",
+            "background_templates": ["{{ if gt .Code 0 }}#f1184c{{ end }}"],
+            "properties": {
+              "template": "\uF7d4",
+              "always_enabled": false
+            }
+          }
+        ]
+      }
+    ],
+    "final_space": true
+  }
+  
