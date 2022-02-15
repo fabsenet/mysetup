@@ -1,1 +1,0 @@
-﻿robocopy '.\Sublime3' "$env:APPDATA\Sublime Text 3" /E /W:1 /R:3
