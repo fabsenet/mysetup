@@ -6,8 +6,9 @@
 [push]
 	default = simple
 [alias]
-	logo = log --oneline
+	c = checkout
 	st = status
+	logo = log --oneline
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
