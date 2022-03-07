@@ -16,6 +16,13 @@ This will be my one-stop-solution to configure a fresh machine the way I like it
   - Google Chrome
   - ... see `install_software.ps1` for the complete list!
 
+other
+
+```cmd
+winget install --id Microsoft.Powershell --source winget
+winget install JanDeDobbeleer.OhMyPosh
+```
+
 ### Configuration
 
 My own default settings are applied (`configure_*.ps1`)
